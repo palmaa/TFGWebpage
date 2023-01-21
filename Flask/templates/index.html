@@ -1,0 +1,39 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static\index.css">
+    <script type="module" src="static\script.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-auth.js"></script>
+    <title>GymData</title>
+  </head>
+<body>
+
+<div class="formdiv">
+
+<div class="generaldiv">
+  <h1 class="title">Gym Data</h1>
+  <p class="webText">If you are an admin of the gym, please complete the form to get access to the admin panel. Otherwise, just skip the form and get access to real-time data of your gym!</p>
+</div>
+
+<form id="login-form">
+  <div class="inputBox">
+  <label for="email" class="formLabel">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="admin@gym.com" class="formBox" required><br>
+  </div>
+  <div class="inputBox">
+  <label for="password" class="formLabel">Password:</label><br>
+  <input type="password" id="password" name="password" class="formBox" required><br><br>
+  </div>
+  <input type="submit" value="Submit">
+</form>
+
+<form action="/nonPrivileged">
+  <input type="submit" value="I'm not an admin">
+</form>
+
+</div>
+
+</body>
+</html>
+
